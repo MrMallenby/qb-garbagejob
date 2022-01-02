@@ -3,6 +3,36 @@
 # Changes
 - Changed 3D text into Third-eye reality
 
+# Qb-Target config
+- Under Config.Peds add the following code to get the garbage man!
+```
+["garbageman"] = {
+    model = 's_m_y_garbage',
+    coords = vector4(-322.25, -1545.84, 31.02, 273.78),
+    minusOne = true,
+    freeze = true,
+    invincible = true,
+    target = {
+        options = {
+            {
+                type = "client",
+                event = "getGarbagePaySlip",
+                icon = "far fa-money-bill-wave",
+                label = "Collect Paycheck"
+            },
+            {
+                type = "client",
+                event = "GarbageTruckSpawn",
+                icon = "far fa-truck-moving",
+                label = "Spawn Garbage-Truck"
+            },
+        },
+        distance = 2.5,
+    },
+    currentpednumber = 0,
+}
+```
+
 # Showcase
 - https://streamable.com/6md8or
 
